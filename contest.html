@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>طريقة استخدام المسابقات</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root{--bg:#fff;--fg:#1c1c1e;--hint:#6b7280;--card:#f3f4f6;--accent:#2481cc;--ok:#16a34a;--warn:#d97706;--line:#e5e7eb}
+@media (prefers-color-scheme:dark){:root{--bg:#17212b;--fg:#f5f5f5;--hint:#9ca3af;--card:#1f2c3a;--accent:#5eb5f7;--ok:#4ade80;--warn:#fbbf24;--line:#2b3a4a}}
+*{box-sizing:border-box}
+body{margin:0;padding:16px 16px 40px;background:var(--tg-theme-bg-color,var(--bg));color:var(--tg-theme-text-color,var(--fg));
+font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.75;font-size:16px}
+h1{font-size:22px;margin:4px 0 6px}
+h2{font-size:18px;margin:0 0 8px}
+.sub{color:var(--tg-theme-hint-color,var(--hint));margin:0 0 16px;font-size:14px}
+.card{background:var(--tg-theme-secondary-bg-color,var(--card));border-radius:14px;padding:14px 16px;margin:0 0 12px}
+ol,ul{margin:6px 0 0;padding-inline-start:22px}
+li{margin:4px 0}
+.tip{border-inline-start:4px solid var(--ok);padding-inline-start:10px;margin-top:8px;font-size:15px}
+.warn{border-inline-start:4px solid var(--warn);padding-inline-start:10px;margin-top:8px;font-size:15px}
+b{font-weight:700}
+.tag{display:inline-block;background:var(--tg-theme-button-color,var(--accent));color:var(--tg-theme-button-text-color,#fff);border-radius:8px;padding:0 8px;font-size:14px;margin:0 2px}
+</style>
+</head>
+<body>
+<h1>🏆 طريقة استخدام المسابقات</h1>
+<p class="sub">تنظّم مسابقة تصويت في قناتك أو جروبك، والبوت يتولّى العدّ وحماية الأصوات وإعلان الفايز.</p>
+
+<div class="card">
+<h2>إيه هي المسابقة؟</h2>
+<ul>
+<li>متسابقين (أسماء أو صور) والناس تصوّت لواحد منهم بزر تحت البوست.</li>
+<li><b>صوت واحد لكل شخص</b> في المسابقة كلها.</li>
+<li>التصويت <b>للأعضاء بس</b>: البوت بيتأكد إن المصوّت عضو في القناة أو الجروب وقت التصويت.</li>
+<li>أي عضو يخرج أو يتطرد بعد ما صوّت <b>صوته بيتسحب</b> وبيتخصم من العدّاد.</li>
+<li>مسابقة واحدة شغّالة في الوقت، ولما تخلص تقدر تبدأ غيرها.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>1) قبل ما تبدأ</h2>
+<ul>
+<li><b>في القناة:</b> ضيف البوت أدمن وفعّل له صلاحية «نشر الرسائل».</li>
+<li><b>في الجروب:</b> ضيف البوت أدمن بأي صلاحيات، عشان يشوف دخول وخروج الأعضاء.</li>
+<li><b>وإنت</b> لازم تكون أدمن في المكان ده.</li>
+</ul>
+<div class="tip">البوت بيفحص كل ده بنفسه قبل النشر وبيقولك لو ناقص حاجة.</div>
+</div>
+
+<div class="card">
+<h2>2) إنشاء مسابقة</h2>
+<p style="margin:0">من «خدمات مشتركين VIP» ← <span class="tag">🏆 المسابقات</span> ← <span class="tag">➕ إنشاء مسابقة جديدة</span>. هتلاقي خطوات الإعداد:</p>
+<ol>
+<li><b>📡 المكان:</b> ابعت يوزر القناة أو الجروب (مثال <code>@my_store</code>) أو الـID، أو حوّل رسالة من القناة.</li>
+<li><b>✏️ العنوان والوصف:</b> العنوان في أول سطر، والوصف (اختياري) في باقي الرسالة.</li>
+<li><b>👥 المتسابقون:</b> ابعت صورة ومعاها الاسم في الكابشن، أو أسماء كنص (اسم في كل سطر). اضغط «تم» لما تخلّص. اختياري، تقدر تضيفهم بعد النشر.</li>
+<li><b>⏱ المدة:</b> 24 ساعة أو 3 أيام أو 7 أيام، أو تاريخ ووقت بالظبط بتوقيت القاهرة (مثال <code>2026-10-20 21:30</code>). العدّ بيبدأ من لحظة النشر.</li>
+<li><b>🎨 التصميمات (اختياري):</b> شكل النشر وشكل اللوحة وإيموجي التفاعل.</li>
+<li><b>🖼 صورة المسابقة (اختياري):</b> بتظهر أعلى البوست الرئيسي.</li>
+</ol>
+<div class="warn">لو اخترت «بوست لكل متسابق» أو «ألبوم + لوحة أرقام» لازم لكل متسابق صورة. «بوست واحد مجمّع» والألبوم لحد 100 متسابق.</div>
+</div>
+
+<div class="card">
+<h2>3) المعاينة والنشر</h2>
+<ol>
+<li>اضغط <span class="tag">👁 معاينة ثم نشر</span>، والبوت يبعتلك شكل البوست الرئيسي في الخاص.</li>
+<li>لو فيه حاجة ناقصة (مكان، عنوان، مدة…) هيقولك إيه هي.</li>
+<li>لو عجبك اضغط <span class="tag">🚀 نشر الآن</span> وتنزل المسابقة في القناة أو الجروب.</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>4) خيارات المسابقة</h2>
+<ul>
+<li><b>🔢 العدّاد:</b> ظاهر للناس مباشرة، أو مخفي لحد النهاية.</li>
+<li><b>🛡 صرامة فلتر الغش:</b> متساهلة (الحالات الواضحة بس) • متوسطة (متوازنة) • صارمة (أي علامة شك).</li>
+<li><b>📢 نص التنبيه:</b> الرسالة اللي بتظهر لغير الأعضاء لما يحاولوا يصوّتوا (150 حرف حد أقصى).</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>5) تدير المسابقة وهي شغّالة</h2>
+<p style="margin:0">من <span class="tag">🏆 المسابقات</span> تلاقي شاشة الإدارة:</p>
+<ul>
+<li><b>➕ إضافة متسابقين:</b> بيتنشروا فورًا ومفيش حاجة بتتمسح من الأصوات الحالية.</li>
+<li><b>📊 الترتيب الحالي:</b> بتشوفه إنت حتى لو العدّاد مخفي عن الناس.</li>
+<li><b>⏱ تمديد الوقت:</b> +ساعة، +24 ساعة، +3 أيام، +7 أيام.</li>
+<li><b>⏸ إيقاف مؤقت / ▶️ استئناف:</b> وقت الإيقاف التصويت بيتقفل.</li>
+<li><b>👤 الأصوات المسحوبة:</b> مين خرج وصوته اتسحب.</li>
+<li><b>📌 فتح المسابقة:</b> يوديك لبوست المسابقة في المكان.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>6) الأصوات المشبوهة 🚩</h2>
+<p style="margin:0">البوت بيعلّق صوت الحسابات اللي فيها علامات شك (اسم أو لغة غير عربية، بدون يوزر، موجة انضمام مفاجئة…). الصوت المعلّق <b>مش بيتحسب</b> لحد ما تراجعه:</p>
+<ul>
+<li><b>✅ اعتماد:</b> الصوت يتحسب.</li>
+<li><b>🗑 حذف:</b> الصوت يتشال.</li>
+<li>تقدر تعتمد أو تحذف الكل مرة واحدة.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>7) النهاية وإعلان الفايز 🏁</h2>
+<ul>
+<li>لما الوقت يخلص، البوت بيقفل الأزرار وينشر الفايز والترتيب النهائي في المكان تلقائي، وبيبعتلك إشعار.</li>
+<li>تقدر تنهيها قبل الوقت بـ <span class="tag">🏁 إنهاء وإعلان الفايز</span>.</li>
+<li>لو متسابقين خدوا نفس عدد الأصوات بيتعلن <b>تعادل</b> بينهم. ولو مفيش أصوات بيتعلن إن المسابقة انتهت من غير أصوات.</li>
+<li><span class="tag">🗑 إلغاء المسابقة</span> بتقفل الأزرار من غير فايز ومينفعش تتراجع عنها.</li>
+<li>بعد ما تخلص تقدر تشوف مسابقاتك من <span class="tag">🕘 مسابقاتي السابقة</span> وتبدأ مسابقة جديدة.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>الناس بتصوّت إزاي؟</h2>
+<ul>
+<li>يضغطوا زر المتسابق اللي عاجبهم تحت البوست، ويظهر لهم تأكيد إن صوتهم اتسجّل.</li>
+<li>لو مش أعضاء بيظهر لهم نص التنبيه، يشتركوا ويضغطوا الزر تاني.</li>
+<li>لو حاولوا يصوّتوا تاني بيظهر لهم إنهم صوّتوا بالفعل.</li>
+</ul>
+</div>
+
+<script>
+try{var t=window.Telegram&&Telegram.WebApp;if(t){t.ready();t.expand();}}catch(e){}
+</script>
+</body>
+</html>
