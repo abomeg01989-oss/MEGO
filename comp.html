@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دليل دعم التعويضات</title>
+<style>
+:root{--bg:#f6f5f1;--sf:#fff;--ink:#1b1a17;--mu:#6a665c;--ln:#e3e0d6;--ac:#f2b800;--aci:#1b1a17;--ok:#1f8a4c;--bad:#c2352b;--ph:#14161a;--sc:#fff;--sci:#1b1a17;--scm:#8a8f98;--scl:#eceef1;--tg:#2a8be8;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12130f;--sf:#1b1c17;--ink:#f1efe6;--mu:#a5a193;--ln:#2c2d26;--ok:#4cc27c;--bad:#ef6b5f;--ph:#000;--sc:#1d2025;--sci:#eef0f3;--scm:#8d95a1;--scl:#2a2e35;--tg:#4aa3f2;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12130f;--sf:#1b1c17;--ink:#f1efe6;--mu:#a5a193;--ln:#2c2d26;--ok:#4cc27c;--bad:#ef6b5f;--ph:#000;--sc:#1d2025;--sci:#eef0f3;--scm:#8d95a1;--scl:#2a2e35;--tg:#4aa3f2;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;padding:14px 14px 96px}
+.w{max-width:520px;margin:auto}
+h1{font-size:22px;margin:4px 0 12px}
+.tabs{display:none;gap:8px;margin-bottom:12px}.tabs0{display:flex;gap:8px;margin-bottom:12px}
+.tabs button{flex:1;padding:10px 6px;font:600 14px inherit;font-family:inherit;border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:10px}
+.tabs button.on{background:var(--ac);color:var(--aci);border-color:var(--ac)}
+.pg{height:6px;background:var(--ln);border-radius:3px;overflow:hidden}.pg i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
+.cnt{font-size:13px;color:var(--mu);margin:8px 0 2px;font-weight:600}
+h2{font-size:20px;margin:0 0 6px;line-height:1.4}
+.d{margin:0 0 14px}.d ul{margin:6px 0;padding-inline-start:20px}
+code{direction:ltr;unicode-bidi:embed;background:var(--sf);border:1px solid var(--ln);padding:1px 6px;border-radius:4px;font-size:14px}
+.tip,.warn{border-inline-start:4px solid var(--ac);background:var(--sf);padding:8px 12px;margin:12px 0;font-size:15px;border-radius:6px}.warn{border-color:var(--bad)}
+.ask{text-align:center;font-size:14px;color:var(--mu);margin:8px 0 6px}
+.phone{width:240px;margin:0 auto;background:var(--ph);border-radius:30px;padding:9px}
+.phone.sh{animation:sh .35s}@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.sr{background:var(--sc);color:var(--sci);border-radius:22px;padding:10px 0 12px;font-size:14px;line-height:1.5;min-height:230px;overflow:hidden}
+.bar{display:flex;gap:8px;padding:2px 14px 10px;font-weight:700;border-bottom:1px solid var(--scl)}.bar i{font-style:normal;color:var(--tg)}
+.r{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 14px;border-bottom:1px solid var(--scl)}.r small{color:var(--scm)}
+.sw{width:34px;height:20px;border-radius:10px;background:var(--scl);position:relative;flex:none;transition:.2s}
+.sw:after{content:"";position:absolute;top:3px;inset-inline-start:3px;width:14px;height:14px;border-radius:50%;background:var(--scm);transition:.2s}
+.sw.on{background:var(--ok)}.sw.on:after{background:#fff;inset-inline-start:17px}
+.btn{margin:10px 14px 0;background:var(--tg);color:#fff;text-align:center;padding:10px;border-radius:10px;font-weight:700}.btn.g{background:var(--scl);color:var(--sci)}
+.msg{margin:10px 14px 0;background:var(--scl);border-radius:12px;padding:9px 11px;font-size:13px}
+.ch{display:flex;gap:8px;padding:12px 14px 0}.ch span{flex:1;text-align:center;padding:10px 4px;border-radius:10px;background:var(--scl);font-weight:700}
+.bd{font-size:11px;background:var(--scl);padding:1px 8px;border-radius:9px;font-weight:700}
+.ht{text-align:center;color:var(--scm);font-size:12px;padding:10px 14px 0}
+.hot{cursor:pointer;background:rgba(242,184,0,.25)!important;outline:2px solid var(--ac);outline-offset:-2px;animation:pu 1.3s infinite;position:relative}
+.btn.hot,.msg.hot,.ch span.hot{outline-offset:2px}
+@keyframes pu{50%{box-shadow:0 0 0 6px rgba(242,184,0,.35)}}
+.hot:after{content:"👆";position:absolute;inset-inline-start:8px;bottom:-4px;font-size:18px;animation:bn 1s infinite}
+@keyframes bn{50%{transform:translateY(-4px)}}
+.pm{display:flex;flex-direction:column;gap:6px;margin-top:10px;font-size:15px}.pm span{display:flex;gap:8px;align-items:flex-start}
+.dt{width:10px;height:10px;border-radius:50%;flex:none;margin-top:9px}.on1{background:var(--ok)}.off1{background:var(--bad)}.op1{background:var(--scm)}
+.nav{position:fixed;inset-inline:0;bottom:0;background:var(--bg);border-top:1px solid var(--ln);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px))}
+.nav div{max-width:520px;margin:auto;display:flex;gap:10px}
+.nav button{flex:1;padding:13px;font:700 16px inherit;font-family:inherit;border-radius:12px;border:1.5px solid var(--ink);background:transparent;color:var(--ink)}
+.nav button.p{background:var(--ac);color:var(--aci);border-color:var(--ac);flex:2}.nav button:disabled{opacity:.35}
+.done{text-align:center;padding:30px 10px}.done b{font-size:44px;display:block}
+.tt{position:fixed;inset-inline:0;bottom:84px;text-align:center;pointer-events:none;opacity:0;transition:.2s}.tt.on{opacity:1}
+.tt span{background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:20px;font-size:14px}
+</style><script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head><body><div class="w">
+<h1>💰 إزاي تتواصل مع الدعم</h1>
+<div class="tabs" id="tabs"></div>
+<div class="pg"><i id="pg"></i></div>
+<div id="v"></div></div>
+<div class="tt" id="tt"><span></span></div>
+<div class="nav"><div><button id="pv">→ السابق</button><button id="nx" class="p">التالي ←</button></div></div>
+<script>
+const R=(t,h)=>['r',t,h],B=t=>['bar',t],W=(t,on,h)=>['sw',t,on,h],T=(t,h,g)=>['btn',t,h,g],M=(t,h)=>['msg',t,h],H=t=>['ht',t];
+const pm=a=>'<div class="pm">'+a.map(x=>`<span><i class="dt ${x[2]}1"></i><span><b>${x[0]}</b> — ${x[1]}</span></span>`).join('')+'</div>';
+const G={
+link:{n:'🔗 ربط البوت',s:[
+{t:'ربط القناة: افتح إعدادات القناة',d:'ادخل قناتك، واضغط على اسمها فوق، وبعدين زر <b>تعديل</b> (القلم).',p:[B('قناتي'),R('تعديل ✏️',1),R('الوسائط والروابط'),R('الإشعارات')]},
+{t:'المشرفون ← إضافة مشرف',d:'من صفحة التعديل افتح <b>المشرفون</b> (Administrators)، واضغط <b>إضافة مشرف</b>.',p:[B('تعديل'),R('الاسم والوصف'),R('المشرفون',1),R('الأعضاء')],then:[B('المشرفون'),R('👤 أدمن حالي'),T('إضافة مشرف',1)]},
+{t:'اختار البوت',d:'اكتب في البحث <b>يوزر البوت</b> واختاره من النتايج.',p:[B('إضافة مشرف'),M('🔍 يوزر البوت…'),R('RADAR | VIP bot',1)]},
+{t:'اقفل كل الصلاحيات',d:'أدمن من غير أي صلاحيات كفاية. لازم يكون <b>أدمن</b> بس عشان يقدر يتحقق من الاشتراك.'+pm([['نشر الرسائل','مقفول','off'],['تعديل رسائل الآخرين','مقفول','off'],['حذف الرسائل','مقفول','off'],['دعوة المستخدمين وباقي الصلاحيات','مقفولة','off']])+'<p>بعدها اضغط <b>حفظ</b> (علامة ✓).</p>',p:[B('صلاحيات المشرف'),W('نشر الرسائل'),W('تعديل الرسائل'),W('حذف الرسائل'),W('دعوة المستخدمين'),T('حفظ ✓',1),H('كلها مقفولة')]},
+{t:'سجّل القناة في البوت',d:'افتح البوت واضغط <b>خدمات مشتركين VIP</b> ثم <b>الاشتراك الإجباري</b>، وابعت للبوت واحدة من دول:<ul><li>يوزر القناة <code>@channel</code> أو رابطها</li><li>أو <b>حوّل رسالة</b> من القناة</li></ul>بعدها اكتب رسالة الاشتراك اللي هتظهر للناس.<div class="tip"><b>قناة خاصة؟</b> ابعت <b>رابط الدعوة</b> (<code>t.me/+…</code>) الأول، وبعده حوّل رسالة منها. وتقدر تستخدم <b>جروب</b> بدل القناة بنفس الخطوات.</div>',p:[B('الاشتراك الإجباري'),H('ابعت القناة أو الجروب:<br>@channel أو رسالة محوّلة'),M('@my_channel ✓',1)]},
+{t:'ربط Telegram Business: افتحه',d:'<div class="warn"><b>لازم الأول:</b> حسابك يكون <b>Premium</b>، لأن Telegram Business ميزة من مزاياه.</div>من <b>الإعدادات</b> (Settings) اختار <b>Telegram Business</b>.',p:[B('الإعدادات'),R('حسابي'),R('Telegram Business',1),R('Premium')]},
+{t:'افتح روبوتات المحادثة',d:'انزل لتحت واختار <b>روبوتات المحادثة</b> (Chatbots).',p:[B('Telegram Business'),R('ساعات العمل'),R('الرد السريع'),R('روبوتات المحادثة',1)]},
+{t:'أضف البوت',d:'اكتب <b>يوزر البوت</b> في الخانة واختاره.',p:[B('روبوتات المحادثة'),M('@يوزر_البوت',1),H('اختار البوت اللي هيرد نيابةً عنك')]},
+{t:'اختار الشاتات',d:'خلّي البوت يشتغل مع <b>كل الشاتات الخاصة</b>، ولو فيه أشخاص مش عايز البوت يتدخّل معاهم ضيفهم في <b>الاستثناءات</b>.',p:[B('الشاتات'),R('كل الشاتات الخاصة',1),R('استثناء شاتات')]},
+{t:'فعّل الصلاحيات المطلوبة',d:'دوس على الصلاحيتين المضيئتين عشان تفعّلهم، وبعدها اضغط <b>تم</b>.'+pm([['الرد على الرسائل','لازم (عشان رسالة الاشتراك توصل للناس)','on'],['حذف الرسائل المستلمة','لازم (عشان يمسح رسايل المخالفين والغير مشتركين)','on'],['قراءة الرسائل (علامة مقروء)','اختياري','op'],['تعديل الاسم والصورة والبايو والهدايا والنجوم والقصص','سيبها مقفولة، البوت مش محتاجها','off']]),multi:1,p:[B('صلاحيات البوت'),W('الرد على الرسائل',0,1),W('حذف الرسائل المستلمة',0,1),W('قراءة الرسائل'),W('تعديل الملف الشخصي'),T('تم'),H('اللي باللون الأصفر لازم يتفعّل')]},
+{t:'اتأكد إنه اشتغل',d:'البوت هيبعتلك رسالة في الخاص: <b>«تم تشغيل الخدمة»</b>. لو ظهر تحذير إن صلاحية «الرد» أو «حذف الرسائل المستلمة» مش مفعّلة، ارجع للخطوة اللي فاتت وفعّلها.<div class="tip">لو الرسالة ما وصلتش، افصل البوت من «روبوتات المحادثة» وأضفه من جديد.</div>',p:[B('RADAR | VIP'),M('✅ <b>تم تشغيل الخدمة</b><br>فلتر الألفاظ وتحذيرات النصابين شغّالة دلوقتي')]}
+]},
+sh:{n:'📩 تقديم الشكوى',s:[
+{t:'افتح «تقديم شكوى»',d:'من القائمة الرئيسية للبوت اضغط <b>📩 تقديم شكوى</b>.',p:[B('RADAR | VIP'),R('🔍 فحص شخص'),R('📩 تقديم شكوى',1),R('👤 حسابي')]},
+{t:'اضغط «إرسال الشكوى»',d:'الزر ده بيبدأ شكوى جديدة. فيه فترة انتظار بين كل شكوى والتانية، ولو لسه ما خلصتش الزر بيعرض عدّاد <b>«⏳ متاح بعد …»</b> وتقدر تضغط «🔄 تحديث العداد».',p:[B('تقديم شكوى'),T('📤 إرسال الشكوى',1),T('📋 سجل الشكاوى',0,1)]},
+{t:'اختار نوع الشكوى',d:'<ul><li><b>🚨 نصاب:</b> واحد أخد فلوس أو بضاعة ومرجّعهاش.</li><li><b>🎭 منتحل:</b> واحد بيتقمّص شخصية أو حساب حد تاني.</li></ul>',p:[B('نوع الشكوى'),['ch','🚨 نصاب','🎭 منتحل'],H('اختار النوع المناسب')]},
+{t:'ابعت كل حاجة في رسالة واحدة',d:'الشكوى كلها بتتبعت <b>مرة واحدة</b>: بيانات الشخص + وصف المشكلة + الدليل. التفاصيل في الخطوتين اللي بعد الجاية.',p:[B('إرسال الشكوى'),M('@username + وصف المشكلة + الدليل',1)]},
+{t:'اضغط «إرسال الدليل»',d:'بعدها الشكوى بتروح للإدارة تراجعها. لو غيّرت رأيك قبل ما تبعت اضغط <b>❌ إلغاء</b>.<div class="tip"><b>شكوى منتحل؟</b> بعد ما تبعت الوصف، البوت هيسألك عن <b>يوزر الحساب الأصلي</b> (الشخص اللي المنتحل بيتقمّص شخصيته) أو رابطه أو الآيدي. ابعته أو حوّل رسالة منه.</div>',p:[B('إرسال الشكوى'),T('📤 إرسال الدليل',1),T('❌ إلغاء',0,1)]},
+{t:'🚨 الدليل المطلوب لشكوى نصاب',d:'ابعت في رسالة واحدة:<ul><li><code>@username</code> أو Telegram ID أو رقم هاتف الشخص</li><li>وصف المشكلة</li><li>كل أرقام الكاش اللي ظاهرة في الدليل (اكتبها في الرسالة كمان)</li></ul>والدليل واحد من اتنين:<ul><li>🎬 <b>فيديو واحد</b> لوحده، أو فيديو + <b>٤ صور</b> كحد أقصى</li><li>📸 أو من <b>١ إلى ٥ صور</b> من غير فيديو</li></ul>أهم الصور بالترتيب:<ul><li>١) سكرين التحويل (إثبات الدفع)</li><li>٢) سكرين البلوك (إنه حظرك بعد ما استلم)</li><li>٣) سكرين فيها يوزر الشخص وآيدي حسابه</li><li>٤) رسائل الاتفاق والتحويلات اللي بينكم</li><li>٥) أي سكرين فيها رقم كاش أو بيانات مهمة للشخص</li></ul><div class="warn"><b>الفيديو:</b> لازم يوضّح التعامل من أوله لآخره ويبان فيه <b>يوزر الشخص</b> بوضوح. <b>الصور:</b> لازم يوزر الشخص يكون واضح ومقروء، وإلا الشكوى ممكن تتأخر أو ترفض.</div>'},
+{t:'🎭 الدليل المطلوب لشكوى منتحل',d:'<ul><li>Telegram ID بتاع الشخص (أساسي) + اليوزر أو رقم الكاش لو متاحين</li><li>وصف المشكلة <b>كتابة</b></li></ul><div class="warn"><b>نص فقط:</b> غير مسموح بأي صور أو فيديو أو ملفات في شكوى المنتحل، وأي ميديا بتتمسح.</div>'},
+{t:'متابعة شكوتك: «📋 سجل الشكاوى»',d:'هتلاقي كل شكاويك وحالة كل واحدة، وتتنقل بينهم بأزرار التالي والسابق. والنتيجة بتوصلك كرسالة في البوت.'+pm([['⏳ قيد المراجعة','الإدارة بتراجعها','op'],['✅ تم النشر','اتراجعت واتقبلت واتنشرت','on'],['❌ مرفوضة','اتراجعت ومتقبلتش (والسبب بيوصلك)','off'],['🚫 ملغاة','اتلغت لأنك حظرت البوت أو غادرته قبل المراجعة','op']])+'<div class="tip"><b>متحظرش البوت</b> لحد ما شكوتك تتراجع، عشان تفضل شغالة وتوصلك النتيجة.</div>',p:[B('سجل الشكاوى'),['r2','@user1','⏳ قيد المراجعة'],['r2','@user2','✅ تم النشر'],['r2','@user3','❌ مرفوضة']]}
+]}};
+G.cp={n:'💰 دعم التعويضات',s:[
+{t:'افتح «دعم التعويضات»',d:'من القائمة الرئيسية للبوت اضغط <b>💰 دعم التعويضات</b>.',p:[B('RADAR | VIP'),R('⚖️ اعتراض على بلاغ'),R('💰 دعم التعويضات',1),R('👁️ مراقبة حساب')]},
+{t:'اختار الدعم المناسب',d:'لو اتنصب عليك أو عايز بلاغ يتمسح عنك، كلّم الدعم المناسب <b>مباشرة</b>. الزرارين بيفتحوا محادثة مع حساب الدعم، ومفيش أي تسجيل جوه البوت.<ul><li>🛡️ التواصل مع دعم ضد السرقة</li><li>🕵️ التواصل مع دعم كشف النصابين</li></ul>',p:[B('دعم التعويضات'),T('🛡️ التواصل مع دعم ضد السرقة',1),T('🕵️ التواصل مع دعم كشف النصابين',0,1),T('🔙 القائمة الرئيسية',0,1)]},
+{t:'كلّم الدعم',d:'هتتحوّل لمحادثة مع حساب الدعم على تليجرام. اشرح مشكلتك في رسالة واضحة.<div class="tip"><b>نصيحة:</b> جهّز قبلها سكرين التحويل ويوزر الشخص وأي رسائل بينكم عشان الدعم يفهم حالتك أسرع.</div>',p:[B('محادثة الدعم'),M('اكتب مشكلتك هنا…',1),H('الدعم بيرد عليك في المحادثة دي')]}]};
+Object.keys(G).forEach(k=>{if(k!=='cp')delete G[k]});const $=id=>document.getElementById(id);const tg=window.Telegram&&Telegram.WebApp&&Telegram.WebApp.platform&&Telegram.WebApp.platform!=='unknown'?Telegram.WebApp:null;
+if(tg){try{tg.ready();tg.expand();document.documentElement.setAttribute('data-theme',tg.colorScheme||'light')}catch(e){}}
+let g='cp',i=0,left=0;
+const nd=n=>n.toLocaleString('ar-EG');
+function el(x,idx,hotFn){const[k,a,b,c]=x;let h='',hot=false;
+ if(k=='bar')return`<div class="bar"><i>←</i> ${a}</div>`;
+ if(k=='ht')return`<div class="ht">${a}</div>`;
+ if(k=='ch')return`<div class="ch"><span class="hot" data-h>${a}</span><span>${b}</span></div>`;
+ if(k=='r2')return`<div class="r"><span>${a}</span><span class="bd">${b}</span></div>`;
+ const H=k=='r'?b:k=='btn'?b:k=='msg'?b:k=='sw'?c:0;
+ const cl=H?' hot" data-h="1':'';
+ if(k=='r')return`<div class="r${cl}"><span>${a}</span><small>›</small></div>`;
+ if(k=='sw')return`<div class="r${cl}"><span>${a}</span><span class="sw${b?' on':''}"></span></div>`;
+ if(k=='btn')return`<div class="btn${c?' g':''}${cl}">${a}</div>`;
+ if(k=='msg')return`<div class="msg${cl}">${a}</div>`;}
+function toast(m){const t=$('tt');t.firstElementChild.textContent=m;t.classList.add('on');clearTimeout(toast.k);toast.k=setTimeout(()=>t.classList.remove('on'),1800)}
+function go(n){const s=G[g].s;if(n<0||n>s.length)return;i=n;draw()}
+function draw(){const s=G[g].s,tot=s.length;$('pg').style.width=(i/tot*100)+'%';
+ $('pv').disabled=i==0;$('nx').textContent=i>=tot?(tg?'إغلاق ✖':'من الأول ↺'):'التالي ←';
+ if(i>=tot){$('v').innerHTML='<div class="done"><b>🎉</b><h2>خلّصت الدليل</h2><p class="d">لو علقت في أي خطوة، ابعت لنا لقطة شاشة من اللي ظاهر عندك.</p></div>';return}
+ const st=s[i];let ph='';
+ if(st.p){left=st.multi?st.p.filter(x=>x[3]&&x[0]=='sw').length:1;
+  ph=`<div class="ask">دوس على الجزء المضيء في الشاشة 👇</div><div class="phone" id="ph"><div class="sr">${st.p.map(el).join('')}</div></div>`}
+ $('v').innerHTML=`<div class="cnt">الخطوة ${nd(i+1)} من ${nd(tot)}</div><h2>${st.t}</h2><div class="d">${st.d}</div>${ph}`;
+ scrollTo({top:0});
+ const phn=$('ph');if(!phn)return;
+ phn.onclick=e=>{const h=e.target.closest('[data-h]');
+  if(!h){phn.classList.remove('sh');void phn.offsetWidth;phn.classList.add('sh');toast('دوس على الجزء المضيء 👆');return}
+  const sw=h.querySelector('.sw');if(sw)sw.classList.add('on');h.classList.remove('hot');h.removeAttribute('data-h');
+  if(--left>0){toast('تمام ✅ كمّل الباقي');return}
+  toast('تمام ✅');setTimeout(()=>go(i+1),450)}}
+function tabs(){$('tabs').innerHTML=Object.keys(G).map(k=>`<button class="${k==g?'on':''}" data-k="${k}">${G[k].n}</button>`).join('')}
+$('tabs').onclick=e=>{const k=e.target.dataset.k;if(k&&k!=g){g=k;i=0;tabs();draw()}};
+$('nx').onclick=()=>{if(i>=G[g].s.length){tg?tg.close():go(0)}else go(i+1)};$('pv').onclick=()=>go(i-1);
+tabs();draw();
+</script></body></html>
